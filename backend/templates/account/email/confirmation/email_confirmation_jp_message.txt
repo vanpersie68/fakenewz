@@ -1,0 +1,7 @@
+{% extends "account/email/confirmation/base_message_jp.txt" %}
+{% load account %}
+{% load i18n %}
+
+{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %} あなたがこのメールを受け取っているのは、ユーザー {{ user_display }} が fakenewz.info にアカウントを登録するためにあなたのメールアドレスを提供したからです。.
+
+これが正しいことを確認するには、{{ source_domain }}/verification/email/?key={{ key }} にアクセスします  {% endblocktrans %}{% endautoescape %}{% endblock %}

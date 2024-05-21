@@ -1,0 +1,53 @@
+version: "3"
+
+services:
+    cs371-django:
+        build:
+            context: .
+            dockerfile: ./django/Dockerfile
+        container_name: cs371-django
+        # depends_on:
+        #     - cs371-postgresql
+        ports:
+            - 8000:8000
+        expose:
+            - 8000
+        restart: always
+
+    cs371-vue:
+        environment:
+            - VUE_APP_SERVER=http://111.231.14.233/api/
+        container_name: cs371-vue
+        deploy:
+            resources:
+                  limits:
+                        memory: 1024M
+        build:
+            context: ./
+            dockerfile: ./vue/Dockerfile
+        # depends_on:
+        #     - cs371-django
+        ports:
+            - 8080:8080
+        expose:
+            - 8080
+        volumes:
+            - ./vue/nginx.conf:/etc/nginx/sites-available/default
+
+    # cs371-postgresql:
+    #     image: postgres:latest
+    #     container_name: cs371-postgresql
+    #     restart: always
+    #     ports:
+    #         - 5432:5432
+    #     expose:
+    #         - 5432
+    #     environment:
+    #       POSTGRES_USER: postgres
+    #       POSTGRES_PASSWORD: postgres*5432
+    #       POSTGRES_DB: defaultdb
+    #     volumes:
+    #         - pgdata:/var/lib/postgresql/data
+
+volumes:
+    pgdata:

@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "704895",
+      "name": "twitter-retweet",
+      "font_class": "twitterretweet",
+      "unicode": "eb2d",
+      "unicode_decimal": 60205
+    },
+    {
+      "icon_id": "4766692",
+      "name": "like",
+      "font_class": "like",
+      "unicode": "e7c8",
+      "unicode_decimal": 59336
+    },
+    {
+      "icon_id": "8863122",
+      "name": "回复",
+      "font_class": "huifu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10294701",
+      "name": "share",
+      "font_class": "share",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "11372639",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    },
+    {
+      "icon_id": "17412088",
+      "name": "Comment",
+      "font_class": "Comment",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "26511136",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    }
+  ]
+}

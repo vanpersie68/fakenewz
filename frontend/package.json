@@ -1,0 +1,72 @@
+{
+  "name": "fakenewz",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --mode development",
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint",
+    "serve:alpha": "vue-cli-service serve --mode alphaser",
+    "build:alpha": "vue-cli-service build --mode alpha",
+    "test:unit": "vue-cli-service test:unit",
+    "test": "jest",
+    "format": "prettier --write .."
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-countdown": "^1.1.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
+    "ant-design-vue": "^3.2.2",
+    "antd": "^4.16.13",
+    "apexcharts": "^3.35.0",
+    "axios": "^0.24.0",
+    "chart.js": "^3.6.0",
+    "chartjs-adapter-date-fns": "^2.0.0",
+    "core-js": "^3.6.5",
+    "date-fns": "^2.25.0",
+    "dropzone": "^6.0.0-beta.2",
+    "e-icon-picker": "^1.0.8",
+    "element-ui": "^2.15.8",
+    "jquery": "^3.6.0",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "pubsub-js": "^1.9.3",
+    "qrcode": "^1.5.1",
+    "svg-sprite-loader": "^6.0.11",
+    "vue": "^2.7.10",
+    "vue-apexcharts": "^1.6.2",
+    "vue-chartjs": "^3.5.1",
+    "vue-clipboard2": "^0.3.3",
+    "vue-i18n": "^8.26.5",
+    "vue-lottie": "^0.2.1",
+    "vue-router": "^3.2.0",
+    "vue-smooth-dnd": "^0.8.1",
+    "vue-sweetalert2": "^5.0.2",
+    "vue-youtube": "^1.4.0",
+    "vuex": "^3.4.0",
+    "webgazer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-router": "^5.0.8",
+    "@vue/cli-plugin-unit-jest": "^5.0.8",
+    "@vue/cli-plugin-vuex": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^1.3.4",
+    "babel-plugin-import": "^1.13.5",
+    "node-sass": "^6.0.1",
+    "prettier": "^2.8.4",
+    "sass-loader": "^13.0.2",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
+  }
+}

@@ -1,0 +1,7 @@
+{% extends "account/email/confirmation/base_message_cn.txt" %}
+{% load account %}
+{% load i18n %}
+
+{% block content %}{% autoescape off %}{% user_display user as user_display %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}请您确认在 fakenewz.info 注册了用户 {{ user_display }}。
+
+请点击 {{ source_domain }}/verification/email/?key={{ key }} 验证您的邮箱{% endblocktrans %}{% endautoescape %}{% endblock %}

@@ -1,0 +1,6 @@
+[run]
+include=
+    surveybuilder/models.py
+    surveybuilder/urls.py
+    surveybuilder/serializers.py
+    surveybuilder/views.py

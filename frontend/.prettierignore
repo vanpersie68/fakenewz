@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+out/
+public/
+bundles/
+coverage/
+static/
+templates/
+venv/
+env/
+assets/
+.nyc_output/
